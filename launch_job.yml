@@ -1,0 +1,11 @@
+---
+- name: Launch Job
+  hosts: localhost
+  connection: local
+  gather_facts: False
+
+  tasks:
+  - name: Display Message from extra var
+    debug:
+      msg: "{{ myMsg }}"
+...
